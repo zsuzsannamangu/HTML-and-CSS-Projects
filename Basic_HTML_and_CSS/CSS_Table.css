@@ -1,0 +1,19 @@
+table {
+	border: 3px solid darkgray;
+}
+
+th {
+	color: Indigo;
+	background-color: slategray;
+	border: 2px solid navy;
+}
+
+td {
+	color: navy;
+	background-color: lightgray;
+}
+
+td:hover {
+	background-color: darkgray;
+	color: darkred;
+}
