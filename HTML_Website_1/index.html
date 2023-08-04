@@ -7,18 +7,19 @@
 	<body>
 		
 		<!-- NAV -->
-		<nav>
-			<ul>
-				<li><a href="index.html">HOME</a></li>
-				<li><a href="about.html">ABOUT</a></li>
-				<li><a href="events.html">EVENTS</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
-			</ul>
-		</nav>
+		<div>
+			<div>
+				<ul>
+					<a href="#home" id="link"><li>HOME</li></a>
+					<a href="#about" id="link"><li>ABOUT</li></a>
+					<a href="#contact" id="link"><li>CONTACT</li></a>
+				</ul>
+			</div>
+		</div>
 		<!-- END NAV -->
 
 		<!-- HOME -->
-		<div>
+		<div id="home">
 			<div>
 				<p>Vegan. Sustainably sourced. Organic, local and seasonal ingredients. No plastic.</p>
 				<p>Made by hand, from scratch, weekly, in small batches.</p>
@@ -30,7 +31,7 @@
 		<!-- END HOME -->	
 
 		<!-- ABOUT -->
-		<div>
+		<div id="about">
 			<div>
 				<p>Reduce - Reuse - ReTreat™ is a small chocolate business based in Portland, OR. I started this business in February 2021, when I realized that I cannot find any chocolate that comes in returnable packaging. As our family lives as low waste as possible, we try to refill and reuse everything. I get all our cleaning and skincare products from refill businesses, we use our own containers and mugs when we get take out or we use GoBox, we make our own plant-based milk, etc. (Of course, we’re nowhere perfect, ignore that disposable coffee cup sitting in my garbage can, when yesterday I was desperate to get a latte, and I didn’t have my own mug).</p>
 				<p><span style="color:dodgerblue">ReTreat's packaging is zero waste.</span> Single use plastic packaging has had a detrimental effect on our earth's ecosystem. Your chocolates and truffles will come in an aluminum container. This can be returned and reused. Please, please return them!! These tins are resistant to corrosion, so they can be washed and sanitized over and over again. Aluminum is lightweight and durable. If your tin has a dent or damaged, you can still return it, I will recycle it for you. Also, the paper liner at the bottom is <span style="color:dodgerblue">compostable</span>.</p>
@@ -42,6 +43,24 @@
 
 		<!-- END ABOUT -->
 
+		<!-- CONTACT -->
+
+		<div id="contact">
+			<div>
+				<h1>Questions or Thoughts?</h1>
+				<div>
+					<form action="" method="post">
+						Name: <input type="text" name="Your name"><br>
+						Email: <input type="email" name="Email"><br>
+						Subject: <input type="text" name="Subject"><br>
+						Message: <input type="text" name="Message"><br>
+						<input type="submit" value="Submit"><br>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<!-- END CONTACT -->
 
 	</body>
 </html>
