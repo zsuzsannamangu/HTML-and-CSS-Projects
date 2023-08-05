@@ -1,0 +1,43 @@
+h1 {
+	text-align: center;
+	color: DarkSlateGray;
+	font-family: Open Sans;
+}
+
+p, h2, h4 {
+	color: Black;
+	font-family: Open Sans;
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+img, iframe, form {
+	margin-left: 120px;
+	margin-right: 120px;
+}
+
+h2 {
+	color: DarkSlateGray;
+}
+
+footer {
+	text-align: center;
+	font-family: Open Sans;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: whitesmoke;
+}
+
+li {
+  float: center;
+}
+
+nav {
+	margin-left: 120px;
+	margin-right: 120px;
+}
