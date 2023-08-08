@@ -79,3 +79,7 @@ p {
 .photo:hover img{
     transform: scale(1.1);
 }
+
+col {
+    display: table-column;
+  }
