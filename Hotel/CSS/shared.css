@@ -256,7 +256,7 @@ section {
     font-family: 'Raleway', sans-serif;
 }
 
-.reservation input [type="text"] {
+.reservation input[type="text"] {
     font-size: 15px;
     outline: none;
     font-weight: 600;
@@ -269,12 +269,12 @@ section {
     border-left: 1px solid #090B0D;
     margin: 10px 1em;
     border-radius: 7px;
-    background: #13161B;
+    background: #321219;
     box-shadow: inset 0px 3px 0px 0px rgba (5, 5, 5, 0.15);
     font-family: 'Raleway', sans-serif;
 }
 
-.reservation input [type="text"]:hover {
+.reservation input[type="text"]:hover {
     box-shadow: 0 0 18px rgba(100, 65, 0, .8)
 }
 
