@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Plant Care</title>
-		<link rel="stylesheet" type="text/css" href="./CSS/plant_care.css">
+		<link rel="stylesheet" type="text/css" href="CSS/plant_care.css">
+		<script src="JS/plant_care.js" defer></script>
 	</head>
 	<body>
 		<h1>Plant Care by Zsuzsanna</h1>
@@ -23,7 +24,79 @@
 			</div>
 		</div>
 
+
 		<!--END NAV-->
+
+		<!--Lightbox-->
+		<!--Images used to open the lightbox-->
+		<div clas="row">
+			<div class="column">
+				<img src="Images/aloe_vera_sm.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="Images/snake_plant_sm.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="Images/pothos_sm.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+			</div>
+			<div class="column">
+				<img src="Images/zz_plant_sm.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+			</div>
+		</div>
+
+		<!--Modal/Lightbox-->
+
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="Images/aloe_vera.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="Images/snake_plant.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="Images/pothos.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="Images/zz_plant.jpg" style="width:100%">
+				</div>
+
+				<!--Next/previous controls-->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<!--Caption text-->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!--Thumbnail image controls-->
+				<div class="column">
+					<img class="demo cursor" src="Images/aloe_vera_sm.jpg" style="width:100%" onclick="currentSlide(1)" alt="Aloe Vera">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="Images/snake_plant_sm.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snake Plant">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="Images/pothos_sm.jpg" style="width:100%" onclick="currentSlide(3)" alt="Pothos">
+				</div>
+
+				<div class="column">
+					<img class="demo cursor" src="Images/zz_plant_sm.jpg" style="width:100%" onclick="currentSlide(4)" alt="ZZ Plant">
+				</div>
+			</div>
+		</div>
 
 		<div id="aloevera">
 			<h2>Aloe Vera</h2>

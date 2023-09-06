@@ -1,7 +1,12 @@
-html {
+* {
+    box-sizing: border-box;
+}
+
+body {
 	font-family: Open Sans;
 	color: darkslategray;
 	background-color: antiquewhite;
+    margin: auto;
 }
 
 ul {
@@ -16,8 +21,6 @@ li {
 }
   
 .wrap {
-	margin-left: 120px;
-	margin-right: 120px;
 	display: inline;
 	text-align: center;
 }
@@ -36,13 +39,10 @@ h1 {
 p, h2, h4 {
 	color: Black;
 	font-family: Open Sans;
-	margin-left: 120px;
-	margin-right: 120px;
+
 }
 
 img, iframe {
-	margin-left: 120px;
-	margin-right: 120px;
 	border: 2px solid #48aa81;
 }
 
@@ -56,8 +56,6 @@ footer {
 }
 
 #contact {
-	margin-left: 120px;
-	margin-right: 120px;
 	width: 50%;
     padding: 10px;
     border-radius: 8px;
@@ -104,5 +102,156 @@ footer {
     color: #000;
     background-color: #c8c8c9;
     box-shadow: 2px rgba(0, 0, 0, 0.5);
+}
+
+/*The greater than sign (>) selector in CSS is used to select the element 
+with a specific parent. It is also known as the child combinator selector which 
+means that it selects only those elements which are direct children of a parent.*/
+
+
+.row > .column {
+    padding: 0 8px;
+}
+
+/*Insert some content after the content of each .row element:*/
+/*If a floated element (like the image) is taller than the containing element (like the text), 
+it will "overflow" outside of its container. We can then add a clearfix 
+hack to solve this problem*/
+/*The clear property specifies what should happen with the 
+element that is next to a floating element. Both means that the element is
+pushed below both left and right floated elements */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*Create four equal columns that float next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/*The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: white;
+}
+
+/*Modal content*/
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/*The close button*/
+.close {
+    color: #999;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Hide the slides by default*/
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+/*Next and previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    /*means use the available space*/
+    /*With use the available space, it means that margins and paddings will be respected, and the element will not overflow its parent*/
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    /*The user-select property specifies whether the text of an element can be selected. 
+    In web browsers, if you double-click on some text it will be selected/highlighted. 
+    This property can be used to prevent this. Default value: auto.*/
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/*On hover, add a black background color with a little bit see-through*/
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*this is the 1/4 etc text, numbering the pictures*/
+.numbertext {
+    color: #424549;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+img {
+    margin-bottom: -4px;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    padding: 2px 16px;
+}
+
+img.demo {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/*represents an element (such as a button) that is being activated by the user. */
+.active,
+.demo:hover {
+    opacity: 1;
+}
+  
+img.hover-shadow {
+    transition: 0.3s;
+}
+  
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
