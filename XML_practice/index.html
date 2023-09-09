@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+
+            //creates a text string
+            var Movie = "<movie>" +
+                "<title>Schindler's List</title>" +
+                "<director>Steven Spielberg</director>" +
+                "<starring>Liam Nelson</starring>" +
+                "</movie";
+
+            //creates an XML DOM parser
+            //new creates a new object
+            //XML Parsers are programs that can read through XML files and work with the data in them
+            XML_Parser = new DOMParser();
+            
+            //creates a new XML DOM object using the text string
+            //The parseFromString() method of the DOMParser interface parses a string 
+            //containing either HTML or XML, returning an HTMLDocument or an XMLDocument
+            //Two parameters: (string, mimeType). The string to be parsed and the mimeType is a string that 
+            //determines whether the XML parser or the HTML parser is used to parse the string. Ex: text/html, text/xml
+            XML_Document = XML_Parser.parseFromString(Movie, "text/xml");
+
+            document.getElementById("XML_Example").innerHTML = 
+            //Return the node value of the first <title> element in the document and put it into the <p>
+            XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+        </script>
+    </body>
+</html>
