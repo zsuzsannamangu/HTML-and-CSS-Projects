@@ -1,5 +1,5 @@
 # HTML-and-CSS-Projects
-As part of my Tech Academy bootcamp, I'm storing coding projects for the HTML and CSS course in this repository.
+This repository features a collection of projects built using HTML and CSS.
 
 # Hotel site
 This is an example page for a hotel's booking site. It's styled using CSS and contains a navbar, image containers and a form.
@@ -13,5 +13,6 @@ See here:
 
 ## Technologies used
 HTML5, CSS3
+
 ## Author
 Zsuzsanna Mangu, zsuzsannamangu@gmail.com
