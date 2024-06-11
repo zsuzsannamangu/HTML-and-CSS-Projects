@@ -6,6 +6,7 @@ This repository features a collection of projects built using HTML, CSS and Boot
 ### 1. [Portfolio Website](https://github.com/zsuzsannamangu/Portfolio)
 - **Description:** A personal portfolio website to showcase my skills, projects, and experience.
 - **Technologies Used:** HTML5, CSS3, JavaScript
+- **Live website:** zsuzsannamangu.work
 
 ### 2. [Hotel site](https://github.com/zsuzsannamangu/HTML-and-CSS-Projects/tree/main/Hotel)
 - **Description:** This is an example page for a hotel's booking site. It's styled using CSS and contains a navbar, image containers and a form.
